@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        table {
+            box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        }
+        table thead th {
+            background-color: black;
+            color: white;
+        }
+
+        table tfoot td {
+            background-color: lightskyblue;
+        }
+
+        table tr:nth-child(even) {
+            background-color: lightblue;
+        }
+
+        table tr:hover td {
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <table summary="Descrição" width="250" border="1" cellspacing="0" align="center">
+        <caption>Tabela atletas do penta</caption>
+        <thead>
+            <tr>
+                <th colspan="2">TABELA</th>
+            </tr>
+            <tr id="1">
+                <th>Nome</th>
+                <th>Idade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr id="2">
+                <td>Ronaldo</td>
+                <td>43</td>
+            </tr>
+            <tr id="3">
+                <td>Cafú</td>
+                <td>46</td>
+            </tr>
+            <tr id="4">
+                <td>Rivaldo</td>
+                <td>44</td>
+            </tr>
+            <tr id="5">
+                <td>R. Carlos</td>
+                <td>49</td>
+            </tr>
+            <tr id="6">
+                <td>Neto</td>
+                <td>64</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>5</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>
